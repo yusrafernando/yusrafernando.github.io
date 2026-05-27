@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>
+      Yusra Fernando, S.Kom., M.Kom. — Universitas Teknokrat Indonesia
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <h1>Drs. —</h1>
+          <a class="logo" href="#hero">Yusra Fernando</a>
+        </div>
+        <nav class="nav">
+          <button id="menuToggle" aria-label="Toggle menu">☰</button>
+          <ul class="nav-list" id="navList">
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#research">Riset</a></li>
+            <li><a href="#teaching">Pengajaran</a></li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-intro">
+            <h2>Yusra Fernando</h2>
+            <p class="subtitle">
+              S.Kom., M.Kom. — Dosen, Universitas Teknokrat Indonesia
+            </p>
+            <p>
+              Fokus riset: Sistem Informasi, Pemrograman Web, dan Pembelajaran
+              Mesin. Mengajar mata kuliah pengantar pemrograman, basis data, dan
+              pengembangan web.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn primary" href="#contact">Hubungi</a>
+              <a class="btn ghost" href="#teaching">Lihat Mata Kuliah</a>
+            </div>
+
+            <div class="stats" aria-hidden="true">
+              <div class="stat">
+                <strong id="years">12</strong><span>Tahun Mengajar</span>
+              </div>
+              <div class="stat">
+                <strong id="papers">24</strong><span>Publikasi</span>
+              </div>
+              <div class="stat">
+                <strong id="students">1200+</strong><span>Mahasiswa</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-photo">
+            <img
+              src="assets/profile-placeholder.jpg"
+              alt="Foto Yusra Fernando"
+            />
+            <div class="card">
+              <h3>Kontak Singkat</h3>
+              <p>
+                Email:
+                <a href="mailto:yusra.fernando@teknokrat.ac.id"
+                  >yusra.fernando@teknokrat.ac.id</a
+                >
+              </p>
+              <p>Tel: <a href="tel:+621234567890">+62 812-3456-7890</a></p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h3>Tentang</h3>
+          <p>
+            Yusra Fernando, S.Kom., M.Kom., adalah dosen tetap di Universitas
+            Teknokrat Indonesia dengan pengalaman mengajar dan penelitian di
+            bidang Sistem Informasi dan Pengembangan Web. Memiliki minat kuat
+            pada penerapan pembelajaran mesin untuk pendidikan.
+          </p>
+        </div>
+      </section>
+
+      <section id="research" class="section alt">
+        <div class="container">
+          <h3>Riset & Publikasi</h3>
+          <ul class="cards">
+            <li class="card-item">
+              <h4>Optimasi Pembelajaran Remote</h4>
+              <p>Studi penerapan model adaptif untuk e-learning.</p>
+            </li>
+            <li class="card-item">
+              <h4>Sistem Informasi Akademik</h4>
+              <p>Desain dan evaluasi sistem untuk manajemen program studi.</p>
+            </li>
+            <li class="card-item">
+              <h4>Analisis Data Pendidikan</h4>
+              <p>Model prediksi performa mahasiswa.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="teaching" class="section">
+        <div class="container">
+          <h3>Pengajaran</h3>
+          <ol>
+            <li>Pengantar Pemrograman</li>
+            <li>Basis Data</li>
+            <li>Pengembangan Web</li>
+            <li>Sistem Informasi</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <h3>Kontak</h3>
+          <form id="contactForm" class="contact-form">
+            <div class="row">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nama"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Pesan"
+              required
+            ></textarea>
+            <div class="form-row">
+              <button type="submit" class="btn primary">Kirim Pesan</button>
+              <button type="button" id="clearBtn" class="btn ghost">
+                Bersihkan
+              </button>
+            </div>
+            <p
+              id="formStatus"
+              class="form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© Universitas Teknokrat Indonesia — Yusra Fernando</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
